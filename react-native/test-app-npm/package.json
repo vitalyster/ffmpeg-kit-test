@@ -39,7 +39,10 @@
     "react-test-renderer": "^18.2.0"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!((jest-)?react-native|@react-native|ffmpeg-kit-react-native))"
+    ]
   },
   "resolutions": {
     "**/**/minimist": "^1.2.2"
